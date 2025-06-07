@@ -51,13 +51,14 @@ uploaded_file = st.file_uploader('Choose an Image')
 if uploaded_file is not None:
     if save_uploaded_file(uploaded_file):
         display_image = Image.open(uploaded_file)
-        st.image(display_image)
+        st.image(display_image, caption="Uploaded Image", width=200)
 
         features = feature_extraction(os.path.join("uploads", uploaded_file.name), model)
         indices = recommend(features, feature_list)
 
+        st.markdown("### Recommended Products")
         cols = st.columns(5)
         for i, col in enumerate(cols):
-            col.image(file_names[indices[0][i]])
+            col.image(file_names[indices[0][i]], width=300)
     else:
         st.header("Some Error occurred in file upload")
