@@ -6,3 +6,9 @@ This project is a **content-based image recommender system** that suggests visua
 - **scikit-learn NearestNeighbors** for exact brute-force comparison
 
 The app is built with **Streamlit** to allow interactive image uploads and real-time recommendations.
+
+## 📸 Preview
+
+![App Screenshot](assets/app_screenshot.png)
+
+> Upload a fashion image (e.g., shirt, shoe, etc.) and instantly get the 5 most visually similar products from the dataset.
