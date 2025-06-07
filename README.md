@@ -77,7 +77,7 @@ You can also explore similarity search using standalone scripts:
 - Run `test.py` to perform FAISS-based fast nearest neighbor search with visual output.
 - Run `test2.py` to use brute-force nearest neighbor search via scikit-learn and display results using OpenCV.
 
-## 📌 Technologies Used
+## Technologies Used
 
 - **TensorFlow / Keras** – For deep learning and feature extraction using the ResNet50 model
 - **FAISS** – Facebook AI Similarity Search library for fast nearest neighbor retrieval
@@ -89,7 +89,7 @@ You can also explore similarity search using standalone scripts:
 - **Matplotlib** – For visualizing search results
 - **tqdm** – For progress tracking during feature extraction
 
-## 🧾 Notes
+## Notes
 
 - The image dataset and generated `.pkl` files are **not included** in this repository due to their size.
 - Make sure to download the dataset manually and run `app.py` to generate the required files before using the app or test scripts.
